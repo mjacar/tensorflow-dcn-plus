@@ -1,0 +1,19 @@
+{
+  "model_directory": "dcn_model",
+  "model_repository": "data/models",
+  "train_directory": "data/train/cove",
+  "test_directory": "data/dev/cove",
+  "n_epochs": 4,
+  "start_epoch": 1,
+  "train_batch_size": 16,
+  "test_batch_size": 128,
+  "model": {
+    "state_size": 200,
+    "max_sequence_length": 600,
+    "use_mixed_loss": false,
+    "keep_prob": 0.9,
+    "word_keep_prob": 0.925,
+    "embedding_length": 900,
+    "lr": 1e-3
+  }
+}

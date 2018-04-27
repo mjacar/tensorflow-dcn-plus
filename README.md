@@ -45,5 +45,19 @@ All of the relevant parameters for training are defined in `params.json` as foll
 # Results
 Using the training params in `params.json`, I was able to achieve 61.79% exact match score and 72.56% F1 score on the dev dataset. The model directory corresponding to this model is stored in this repo as `pretrained`. Make sure to clone the repo using `git lfs clone` if you want to use the pretrained model.
 
+# Interactive Mode
+In order to run the model interactively, use the `interactive.py` script which takes the following command line arguments:
+
+`--model_dir`: The model directory (defaults to `pretrained`)
+
+`--glove_file`: The GloVe word vector file that the modelwas trained with
+
+`--use_cove`: A flag that indicates whether or not the model was trained using CoVe (defaults to `false`)
+
+Additionally, the `max_sequence_length` parameter is taken from `params.json`.
+
+![interactive_recording_gif](./assets/interactive_recording.gif)
+An example run of `interactive.py`
+
 # Related Repos
 [André Jonasson's implementation of DCN+](https://github.com/andrejonasson/dynamic-coattention-network-plus)
